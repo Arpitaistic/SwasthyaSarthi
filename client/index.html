@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Swasthya Saarthi</title>
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- AOS for scroll animations -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  
+  <!-- GSAP library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <!-- GSAP ScrollTrigger Plugin -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+  
+  <!-- Defer main JS -->
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Header with Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">🩺 SwasthyaSaarthi</div>
+      <div class="hamburger" id="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="themeToggle">🌙</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero" data-aos="fade-up">
+    <h1>Welcome to Swasthya Saarthi</h1>
+    <p>Your modern healthcare companion at your fingertips.</p>
+    <a href="#features" class="cta">Explore More</a>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="features" data-aos="fade-right">
+    <h2>Our Features</h2>
+    <div class="cards">
+      <div class="card" data-aos="zoom-in">
+        <h3>Health Tracker</h3>
+        <p>Monitor your vitals and health stats in real time.</p>
+      </div>
+      <div class="card" data-aos="zoom-in" data-aos-delay="100">
+        <h3>Appointment Booking</h3>
+        <p>Book consultations and get reminders easily.</p>
+      </div>
+      <div class="card" data-aos="zoom-in" data-aos-delay="200">
+        <h3>Smart Recommendations</h3>
+        <p>Get AI-powered suggestions tailored to your profile.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section with Form -->
+  <section id="contact" class="contact" data-aos="fade-left">
+    <h2>Contact Us</h2>
+    <form id="contactForm" novalidate>
+      <div class="form-group">
+        <label for="name">Name<span>*</span></label>
+        <input type="text" id="name" name="name" required />
+        <small>Error message</small>
+      </div>
+      <div class="form-group">
+        <label for="email">Email<span>*</span></label>
+        <input type="email" id="email" name="email" required />
+        <small>Error message</small>
+      </div>
+      <div class="form-group">
+        <label for="message">Message<span>*</span></label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <small>Error message</small>
+      </div>
+      <button type="submit" class="cta">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Swasthya Saarthi. All rights reserved.</p>
+  </footer>
+
+  <!-- AOS JS for scroll animations -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ once: true });
+  </script>
+</body>
+</html>

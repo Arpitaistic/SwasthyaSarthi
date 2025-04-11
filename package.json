@@ -1,0 +1,25 @@
+{
+  "name": "swasthyasarthi",
+  "version": "1.0.0",
+  "description": "A smart and connected rural healthcare platform combining AI diagnostics, emergency safety, and welfare accessibility.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arpitaistic/SwasthyaSarthi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Arpitaistic/SwasthyaSarthi/issues"
+  },
+  "homepage": "https://github.com/Arpitaistic/SwasthyaSarthi#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
